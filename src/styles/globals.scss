@@ -1,3 +1,9 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,4 +36,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Using Comic Neue for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bangers', system-ui;
+}
+
+/* Using Lato for body text */
+body, p {
+  font-family: 'Comic Neue', cursive;
 }
